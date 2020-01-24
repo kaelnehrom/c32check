@@ -2,7 +2,6 @@
   "name": "c32check",
   "version": "1.0.1",
   "description": "Crockford base-32 checksum encoding",
-  "main": "lib/index",
   "unpkg": "dist/c32check.js",
   "jsdelivr": "dist/c32check.js",
   "prettier": "@blockstack/prettier-config",
@@ -76,6 +75,7 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@blockstack/prettier-config": "0.0.4",
+    "@types/crypto-js": "^3.1.43",
     "@types/node": "^12.12.14",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
@@ -96,8 +96,8 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "base58check": "^2.0.0",
-    "ripemd160": "^2.0.1"
+    "base58check": "git+https://github.com/kaelnehrom/base58check.git",
+    "crypto-js": "^3.1.9-1"
   },
   "engines": {
     "node": ">=8"
